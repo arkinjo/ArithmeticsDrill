@@ -2,7 +2,9 @@ using Printf
 using Primes
 using Random
 using ArgParse
-
+using Symbolics
+using Latexify
+using Nemo
 
 function fracstr(b)
     a = abs(b)
@@ -94,8 +96,8 @@ function arithfrac(rn, rd, op)
 end
 
 function write_latex(writer, title)
-    println("\\documentclass[a4paper,12pt]{exam}")
-    println("%%\\documentclass[a4paper,12pt,answers]{exam}")
+    println("%%\\documentclass[a4paper,12pt]{exam}")
+    println("\\documentclass[a4paper,12pt,answers]{exam}")
     println("\\pagestyle{myheadings}")
     println("\\markright{Name/Student No.:}")
     println("\\begin{document}")
