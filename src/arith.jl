@@ -1,4 +1,5 @@
 using Printf
+using Primes
 using Random
 using ArgParse
 
@@ -19,6 +20,8 @@ function opstr(op)
     elseif op == (*)
         "\\times"
     elseif op == (//)
+        "\\div"
+    elseif op == (/)
         "\\div"
     else
         "?"
